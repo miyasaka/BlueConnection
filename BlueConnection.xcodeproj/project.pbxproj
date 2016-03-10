@@ -164,7 +164,7 @@
 				TargetAttributes = {
 					665680BF1C8979F900A2CDA6 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 35M77GPHP9;
+						DevelopmentTeam = UT732N85RJ;
 					};
 				};
 			};
@@ -379,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.miyasaka.BlueConnection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./BlueConnection/BlueConnection-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -394,6 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.miyasaka.BlueConnection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./BlueConnection/BlueConnection-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
