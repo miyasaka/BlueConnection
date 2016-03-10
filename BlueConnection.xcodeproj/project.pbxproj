@@ -105,6 +105,7 @@
 		665680C21C8979F900A2CDA6 /* BlueConnection */ = {
 			isa = PBXGroup;
 			children = (
+				665680C31C8979F900A2CDA6 /* AppDelegate.swift */,
 				665680DC1C897A6000A2CDA6 /* MessageCell.swift */,
 				665680DD1C897A6000A2CDA6 /* MessageCell.xib */,
 				665680DE1C897A6000A2CDA6 /* MessageListController.swift */,
@@ -114,7 +115,6 @@
 				665680E21C897A6000A2CDA6 /* PreviewImageView.swift */,
 				665680E31C897A6000A2CDA6 /* PreviewImageView.xib */,
 				665680E41C897A6000A2CDA6 /* ServiceManager.swift */,
-				665680C31C8979F900A2CDA6 /* AppDelegate.swift */,
 				665680D51C897A5100A2CDA6 /* BlueConnection-Bridging-Header.h */,
 				665680EE1C897A6A00A2CDA6 /* ToolBarViewController.swift */,
 				665680D61C897A5100A2CDA6 /* ChatViewController.swift */,
