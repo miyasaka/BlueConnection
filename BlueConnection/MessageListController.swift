@@ -29,6 +29,7 @@ class MessageListController: UIViewController {
         
         messageListView.dataSource = self
         messageListView.delegate = self
+        messageListView.separatorColor = UIColor.clearColor()
     }
     
     override func viewDidAppear(animated: Bool) {
