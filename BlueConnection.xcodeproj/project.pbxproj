@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		665680C41C8979F900A2CDA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665680C31C8979F900A2CDA6 /* AppDelegate.swift */; };
-		665680C61C8979F900A2CDA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665680C51C8979F900A2CDA6 /* ViewController.swift */; };
 		665680CE1C8979F900A2CDA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665680CC1C8979F900A2CDA6 /* LaunchScreen.storyboard */; };
 		665680D91C897A5100A2CDA6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665680D61C897A5100A2CDA6 /* ChatViewController.swift */; };
 		665680DA1C897A5100A2CDA6 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665680D71C897A5100A2CDA6 /* ImageCell.swift */; };
@@ -32,7 +31,6 @@
 		0F3501260DCCF6FCD415197F /* Pods-BlueConnection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueConnection.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueConnection/Pods-BlueConnection.release.xcconfig"; sourceTree = "<group>"; };
 		665680C01C8979F900A2CDA6 /* BlueConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665680C31C8979F900A2CDA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		665680C51C8979F900A2CDA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		665680CD1C8979F900A2CDA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		665680CF1C8979F900A2CDA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		665680D51C897A5100A2CDA6 /* BlueConnection-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlueConnection-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -106,27 +104,58 @@
 			isa = PBXGroup;
 			children = (
 				665680C31C8979F900A2CDA6 /* AppDelegate.swift */,
-				665680DC1C897A6000A2CDA6 /* MessageCell.swift */,
-				665680DD1C897A6000A2CDA6 /* MessageCell.xib */,
-				665680DE1C897A6000A2CDA6 /* MessageListController.swift */,
-				665680DF1C897A6000A2CDA6 /* PeerCell.swift */,
-				665680E01C897A6000A2CDA6 /* PeerCell.xib */,
-				665680E11C897A6000A2CDA6 /* PeerListViewController.swift */,
-				665680E21C897A6000A2CDA6 /* PreviewImageView.swift */,
-				665680E31C897A6000A2CDA6 /* PreviewImageView.xib */,
-				665680E41C897A6000A2CDA6 /* ServiceManager.swift */,
+				665680F41C8D117F00A2CDA6 /* Controller */,
+				665680F51C8D11D100A2CDA6 /* Model */,
+				665680F61C8D11EF00A2CDA6 /* View */,
 				665680D51C897A5100A2CDA6 /* BlueConnection-Bridging-Header.h */,
-				665680EE1C897A6A00A2CDA6 /* ToolBarViewController.swift */,
-				665680D61C897A5100A2CDA6 /* ChatViewController.swift */,
-				665680D71C897A5100A2CDA6 /* ImageCell.swift */,
-				665680D81C897A5100A2CDA6 /* ImageCell.xib */,
-				665680C51C8979F900A2CDA6 /* ViewController.swift */,
 				665680CC1C8979F900A2CDA6 /* LaunchScreen.storyboard */,
-				665680F21C897B8300A2CDA6 /* Main.storyboard */,
 				665680F01C897A8900A2CDA6 /* Assets.xcassets */,
 				665680CF1C8979F900A2CDA6 /* Info.plist */,
 			);
 			path = BlueConnection;
+			sourceTree = "<group>";
+		};
+		665680F41C8D117F00A2CDA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				665680E11C897A6000A2CDA6 /* PeerListViewController.swift */,
+				665680D61C897A5100A2CDA6 /* ChatViewController.swift */,
+				665680DE1C897A6000A2CDA6 /* MessageListController.swift */,
+				665680EE1C897A6A00A2CDA6 /* ToolBarViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		665680F51C8D11D100A2CDA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				665680E41C897A6000A2CDA6 /* ServiceManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		665680F61C8D11EF00A2CDA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				665680F21C897B8300A2CDA6 /* Main.storyboard */,
+				665680E21C897A6000A2CDA6 /* PreviewImageView.swift */,
+				665680E31C897A6000A2CDA6 /* PreviewImageView.xib */,
+				665680F71C8D122700A2CDA6 /* Cell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		665680F71C8D122700A2CDA6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				665680DF1C897A6000A2CDA6 /* PeerCell.swift */,
+				665680E01C897A6000A2CDA6 /* PeerCell.xib */,
+				665680DC1C897A6000A2CDA6 /* MessageCell.swift */,
+				665680DD1C897A6000A2CDA6 /* MessageCell.xib */,
+				665680D71C897A5100A2CDA6 /* ImageCell.swift */,
+				665680D81C897A5100A2CDA6 /* ImageCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +193,7 @@
 				TargetAttributes = {
 					665680BF1C8979F900A2CDA6 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = UT732N85RJ;
+						DevelopmentTeam = 35M77GPHP9;
 					};
 				};
 			};
@@ -256,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				665680C61C8979F900A2CDA6 /* ViewController.swift in Sources */,
 				665680E71C897A6000A2CDA6 /* MessageListController.swift in Sources */,
 				665680E51C897A6000A2CDA6 /* MessageCell.swift in Sources */,
 				665680EF1C897A6A00A2CDA6 /* ToolBarViewController.swift in Sources */,
@@ -379,7 +407,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.miyasaka.BlueConnection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./BlueConnection/BlueConnection-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -395,7 +422,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.miyasaka.BlueConnection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./BlueConnection/BlueConnection-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
